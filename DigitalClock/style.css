@@ -1,3 +1,4 @@
+/* ----------------------------- CSS RESET ----------------------------- */
 * {
     margin: 0px;
     padding: 0px;
@@ -6,50 +7,34 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ----------------------------- CONTAINER SECTION ----------------------------- */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.7rem;
 }
-
-.container {
-    height: 30rem;
-    width: 60rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.horizontal-container {
-    width: 100%;
-    height: 48.5%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-}
-
-.vertical-container {
-    width: 32%;
-    height: 100%;
-    background-color: rgb(255 255 255);
+/* ----------------------------- SUB-CONTAINER SECTION ----------------------------- */
+.container .sub-container{
     display: flex;
     flex-direction: column;
-    box-shadow: 7px 11px 25px -14px black;
-    border-radius: 19px;
-}
-
-span {
-    color: rgb(0, 99, 164);
-    font-size: 5rem;
-    display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: yellow; */
+    background-color: blueviolet;
+    height: 10rem;
+    border-radius: 12px;
+    box-shadow: 3px 7px 16px -5px black;
+}
+/* ----------------------------- SPAN SECTION ----------------------------- */
+.container .sub-container span{
+    font-size: 4rem;
 }
 
-.time-text {
+.container .sub-container .time-text{
     font-size: 2rem;
-    color: rgb(47, 47, 47);
+    color: white;
 }
