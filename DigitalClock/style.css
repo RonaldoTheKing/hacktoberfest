@@ -16,6 +16,7 @@
     width: 36rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0.7rem;
 }
 /* ----------------------------- SUB-CONTAINER SECTION ----------------------------- */
@@ -24,14 +25,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    color: rgb(0, 12, 28);
+    background-color: rgb(43, 165, 226);
     height: 10rem;
     border-radius: 12px;
     box-shadow: 3px 7px 16px -5px black;
 }
 /* ----------------------------- SPAN SECTION ----------------------------- */
 .container .sub-container span{
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 .container .sub-container .time-text{
