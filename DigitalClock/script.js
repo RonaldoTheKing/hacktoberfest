@@ -6,11 +6,18 @@ function clock() {
     let hour = time.getHours();
     let min = time.getMinutes();
     let sec = time.getSeconds();
-
+    let date = time.getDate();
+    let setmonth = time.setMonth(9);
+    let month = time.getMonth();
+    let year = time.getFullYear();
 
     let hourSection = document.getElementById('hour').innerHTML = hour;
     let minSection = document.getElementById('min').innerHTML = min;
     let secSection = document.getElementById('sec').innerHTML = sec;
+    let dateSection = document.getElementById('date').innerHTML = date;
+    let monthSection = document.getElementById('month').innerHTML = month+1;
+    let monthText = document.getElementById('month-value').innerHTML = monthArr[month + 1];
+    let yearection = document.getElementById('year').innerHTML = year;
 }
 
 setInterval(clock, 1000);
