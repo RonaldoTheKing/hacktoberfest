@@ -29,6 +29,7 @@ header {
 /* -------------------------- LOGO SECTION ----------------------- */
 header #logo p{
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* -------------------------- NAVBAR SECTION ----------------------- */
