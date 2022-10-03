@@ -16,6 +16,20 @@ header{
     height: 5rem;
 }
 
+header::before{
+    content: '';
+    background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
 /* ----------------------- LOGO SECTION------------------- */
 #logo{
     font-size: 2rem;
@@ -50,4 +64,28 @@ header{
     color: rgb(0, 255, 68);
     font-size: 1.8rem;
     cursor: pointer;
+}
+
+/* ------------------------ HOME SECTION ------------------------ */
+#home{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 65vh;
+    left: 5vw;
+}
+
+#home h1 #nxt{
+    font-size: 4rem;
+    color: rgb(0, 255, 68);
+    margin-right: 0.3rem;
+}
+
+#home h1 #gen{
+    font-size: 4rem;
+    color:rgb(0, 157, 255);
+}
+
+#home h3{
+    font-size: 1.5rem;
 }
