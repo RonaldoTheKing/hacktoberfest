@@ -7,7 +7,7 @@
     font-family: poppins;
 }
 
-/* ----------------------- CONTAINER SECTION ------------------- */
+/* ----------------------- .container SECTION ------------------- */
 .container{
     display: flex;
     margin: auto;
@@ -15,7 +15,7 @@
     align-items: center;
     background-color: black;
     padding: 1rem 0rem;
-    max-width: 1908px;
+    max-width: 1368px;
 }
 
 .container::before{
@@ -36,6 +36,17 @@
 #logo{
     font-size: 2rem;
     color: rgb(0, 157, 255);
+    animation-name: change-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {color:rgb(0, 157, 255)}
+    25% {color:rgb(0, 255, 68)}
+    50% {color:rgb(255, 204, 0)}
+    75% {color:rgb(255, 0, 119)}
+    100% {color:rgb(255, 255, 255)}
 }
 
 /* ----------------------- NAVBAR SECTION------------------- */
