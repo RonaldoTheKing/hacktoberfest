@@ -7,16 +7,18 @@
     font-family: poppins;
 }
 
-/* ----------------------- HEADER SECTION ------------------- */
-header{
+/* ----------------------- CONTAINER SECTION ------------------- */
+.container{
     display: flex;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 5rem;
+    padding: 1rem 0rem;
+    max-width: 1908px;
 }
 
-header::before{
+.container::before{
     content: '';
     background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80');
     background-position: center;
@@ -41,12 +43,12 @@ header::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 43rem;
 
 }
 
 #navbar li{
     list-style-type: none;
+    padding: 0rem 1rem;
 }
 
 #navbar li a{
